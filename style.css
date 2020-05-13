@@ -1,0 +1,17 @@
+.header {
+  background: rgb(0, 192, 102);
+}
+
+#body {
+  height: 100vh;
+}
+
+.container {
+  min-height: 100%;
+}
+
+.footer {
+  height: 10%;
+  margin-top: 2em;
+  background: white;
+}
