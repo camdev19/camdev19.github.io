@@ -2,7 +2,7 @@
 
 .header {
   background: linear-gradient(to top, white, transparent 30%),
-  url("../images/header-photo.jpg");
+  url("../canada-images/header-photo.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
