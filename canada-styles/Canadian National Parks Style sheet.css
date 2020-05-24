@@ -1,5 +1,4 @@
-/* Header section */
-
+/* Header/banner section */
 .header {
   background: linear-gradient(to top, white, transparent 30%),
   url("../canada-images/header-photo.jpg");
@@ -47,18 +46,18 @@
   padding: 100px 150px 50px;
   background-color: white;
   font-family:  Tahoma, Verdana, Geneva, sans-serif;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.5px;
   font-size: 1.25rem;
 }
 
 #down-arrow {
   max-width: 15%;
   display: block;
-  margin: auto;
+  margin: 0 auto 2em;
 }
 
 #nav-list {
-  height:100vh;
+  height: 100vh;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -68,42 +67,102 @@
   background-color: white;
   font-family: Tahoma, Verdana, Geneva, sans-serif;
   font-size: 1.25rem;
+  letter-spacing: 0.5px;
   padding: 0;
-  margin: 0;
-}
-
-ul :first-child {
-  margin: 100px 0 0;
-}
-
-ul :last-child{
-  margin: 0 0 50px;
+  margin-bottom: 2em;
 }
 
 a:link {
   color: black;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 a:visited {
-  background-color: red;
+  color: black;
 }
 
 /* main content section */
-
-.main-content{
-  margin: 0 10px;
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
-}
-
 .body {
   margin: 0;
 }
 
-h4 {
+.main-content{
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  letter-spacing: 0.5px;
+  margin: 3em;
+  padding-bottom: 2em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.province-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.province-image {
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  border-radius: 15px;
+}
+
+.national-park-names {
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+#footer {
+  margin: 3em;
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  letter-spacing: 0.5px;
   text-align: center;
 }
 
+/* media queries */
+
+@media screen and (max-width: 480px) {
+  .header {
+    background: linear-gradient(to top, white, transparent 30%),
+  url("../canada-images/phone-header-photo.jpg");
+  background-size: cover;
+  }
+
+  .header1 {
+    font-size: 5em;
+  }
+
+  .header2 {
+    font-size: 1.5em;
+    margin: 0 1em 1em;
+  }
+
+  .header3 {
+    font-size: 1em;
+    margin: 0 1em;
+  }
+
+  #opening-paragraph{
+    padding: 0;
+    margin: 3em 1em;
+  }
+
+  .main-content {
+    text-align: center;
+    margin: 2em;
+  }
+
+  .province-image {
+    height: 100%;
+  width: 100%;
+  }
+
+  .national-park-names {
+    margin-top: 3em;
+    display: block;
+  }
+}
