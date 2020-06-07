@@ -19,11 +19,3 @@
 .header, .footer {
   background: rgb(0, 192, 102);
 }
-
-#body {
-  height: 100vh;
-}
-
-.container {
-  min-height: 100%;
-}
