@@ -9,13 +9,13 @@ body {
 }
 
 #shop-name, #main-navbar, #secondary-navbar {
-  font-family: fantasy, Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Josefin Sans', sans-serif;;
 }
 
 #main-navbar {
   background-color: #333333;
   padding: 0.8em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   width: 100vw;
 }
 
@@ -27,7 +27,6 @@ ul {
 }
 
 #nav1 {
-  text-decoration: none;
   color: white;
 }
 
@@ -37,7 +36,8 @@ ul {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 6em;
+  font-size: 7em;
+  font-weight: 300;
   padding: 1em 0;
   width: 75vw;
   Margin: auto auto;
@@ -45,8 +45,9 @@ ul {
 
 #secondary-navbar {
   padding: 1em;
-  Margin: auto auto 3em;
-  font-size: 1.2em;
+  margin: auto auto 3em;
+  font-size: 1.2rem;
+  text-decoration: underline;
   background-color: white;
   width: 75vw;
 }
@@ -75,7 +76,7 @@ ul {
 .panel.active {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) )
+  grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
 }
 
 .item {
