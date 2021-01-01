@@ -19,6 +19,12 @@
     <div id="search">
       <h4 id="search-title">Use the search box to get information about snow and weather conditions for your desired location.</h4>
     </div>
+    <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
     <div id="map">
       <!-- google map is here -->
     </div>
@@ -26,9 +32,8 @@
 
     </div>
   </div>
-</body>
 <script src="scripts/script.js"></script>
-<script defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjWFZJwSwW6hDo3GK-90xMHSadQI2tXw&callback=initMap">
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjWFZJwSwW6hDo3GK-90xMHSadQI2tXw&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjWFZJwSwW6hDo3GK-90xMHSadQI2tXw&callback=initAutocomplete&libraries=places&v=weekly"></script>
+</body>
 </html>
