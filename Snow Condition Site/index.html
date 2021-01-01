@@ -11,18 +11,24 @@
 <body>
   <div id="content-left">
     <div id="title-text">
-      <h1>Snow Tracking Central</h1>
-      <h3>The best place to look for your perfect powder conditions</h3>
+      <h1 class="title-text">Snow Tracking Central</h1>
+      <h3 class="title-text">The best place to look for your perfect powder conditions</h3>
     </div>
   </div>
   <div id="content-right">
     <div id="search">
-      <h4>Search here to get information about snow and weather conditions.</h4>
-      <h4>Search box goes here. text will be entered into the search box, then google map will display the searched location, and underneath will be the weather info about the location.</h4>
+      <h4 id="search-title">Use the search box to get information about snow and weather conditions for your desired location.</h4>
+    </div>
+    <div id="map">
+      <!-- google map is here -->
     </div>
     <div id="results">
-      <img src="img/skis.jpg" alt="">
+
     </div>
   </div>
 </body>
+<script src="scripts/script.js"></script>
+<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjWFZJwSwW6hDo3GK-90xMHSadQI2tXw&callback=initMap">
+</script>
 </html>
