@@ -26,6 +26,10 @@ body {
   margin-top: -100px;
 }
 
+.title-text {
+  font-weight: 400;
+}
+
 #content-right {
   text-align: center;
   height: 100vh;
@@ -33,13 +37,15 @@ body {
   font-size: 1.4em;
 }
 
-#results {
-  justify-content: center;
-  align-items: center;
-  background-color: seagreen;
+#search {
+  height: 30vh;
 }
 
-img {
-  height: 100px;
-  width: 100px;
+#search-title {
+  margin: 0;
+  font-weight: 400;
+}
+
+#map {
+  height: 70vh;
 }
