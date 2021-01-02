@@ -38,14 +38,24 @@ body {
 }
 
 #search {
-  height: 30vh;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #search-title {
-  margin: 0;
   font-weight: 400;
+  margin: 0;
 }
 
 #map {
-  height: 70vh;
+  height: 50vh;
+  /* margin: 10px; */
+}
+
+#results {
+  background-color: lawngreen;
+  height: 50vh;
+  /* margin: 10px; */
 }
