@@ -73,8 +73,8 @@ function initAutocomplete() {
 }
 
 // Fetch API Data
-fetch('http://api.openweathermap.org/data/2.5/weather?q=whistler&appid=c0f295a712f014bc4bd69cd98fa32663')
-.then(response => response.json())
-.then(data => {
-  console.log(data)
-});
+// fetch('http://api.openweathermap.org/data/2.5/weather?q=whistler&appid=c0f295a712f014bc4bd69cd98fa32663')
+// .then(response => response.json())
+// .then(data => {
+//   console.log(data)
+// });
