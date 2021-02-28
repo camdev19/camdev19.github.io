@@ -53,5 +53,24 @@ body {
 }
 
 #results {
-  height: 50vh;
+  height: auto;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+#table {
+text-align: center;
+margin: 2px auto;
+}
+
+tr, td {
+border: 1px solid black;
+padding: 2px;
+border-radius: 5px;
+}
+
+#bottom-paragraph {
+  text-align: center;
+  margin: 0px;
+  font-size: 1rem;
 }
