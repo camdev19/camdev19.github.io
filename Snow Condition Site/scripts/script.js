@@ -72,9 +72,60 @@ function initAutocomplete() {
   });
 }
 
-// Fetch API Data
-// fetch('http://api.openweathermap.org/data/2.5/weather?q=whistler&appid=c0f295a712f014bc4bd69cd98fa32663')
-// .then(response => response.json())
-// .then(data => {
-//   console.log(data)
-// });
+
+
+// Loading event listerner for search button
+document.getElementById('searchButton').addEventListener('click', getInputValue);
+
+// Get the search box element
+let detectEnter = document.getElementById('pac-input');
+// Search button is clicked by user pressing enter
+detectEnter.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("searchButton").click();
+  }
+});
+
+// function is called when user clicks the search button and passes text entered into search box to the API
+function getInputValue() {
+  // Selecting the search box element and get the value entered
+  let inputVal = document.getElementById('pac-input').value;
+  // Clearing the info boxes
+  let infoDisplay = document.getElementsByClassName('infoDisplay');
+  infoDisplay.innerHTML = '';
+  if (inputVal > '0') {
+    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + inputVal + '&units=metric&appid=c0f295a712f014bc4bd69cd98fa32663')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+
+      let temperature = document.getElementById('temp');
+      temperature.innerHTML = data.main.temp;
+
+      let feelsLike = document.getElementById('feels')
+      feelsLike.innerHTML = data.main.feels_like;
+      
+      let minTemp = document.getElementById('low');
+      minTemp.innerHTML = data.main.temp_min;
+
+      let maxTemp = document.getElementById('high');
+      maxTemp.innerHTML = data.main.temp_max;
+
+      let windSpeed = document.getElementById('wind-speed');
+      windSpeed.innerHTML = data.wind.speed;
+
+      let windDirection = document.getElementById('wind-direction');
+      windDirection.innerHTML = data.wind.deg;
+
+      let cloudCoverage = document.getElementById('clouds');
+      cloudCoverage.innerHTML = data.clouds.all;
+
+      // let snowfall = document.getElementById('snow');
+      // snowfall.innerHTML(data.snow);
+      });
+  } else if (inputVal === '') {
+    alert('Please search for a location using the map search box, then hit enter or click search to display the forcast');
+  }
+}
