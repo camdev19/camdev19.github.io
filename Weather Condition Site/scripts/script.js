@@ -92,7 +92,7 @@ detectEnter.addEventListener("keyup", function(event) {
 function getInputValue() {
   // Selecting the search box element and get the value entered
   let inputVal = document.getElementById('pac-input').value;
-  // Clearing the info boxes
+  // Clearing the results table
   let infoDisplay = document.getElementsByClassName('infoDisplay');
   infoDisplay.innerHTML = '';
   if (inputVal > '0') {
