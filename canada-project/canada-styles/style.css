@@ -1,7 +1,10 @@
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
 /* Header/banner section */
 .header {
-  background: linear-gradient(to top, white, transparent 30%),
-  url("../canada-images/header-photo.jpg");
+  background: url("../canada-images/header-photo.jpg");
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -9,51 +12,42 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* linear-gradient(to top, white, transparent 30%), */
 }
 
 .header1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #F9F9F9;
   text-shadow: 2px 2px black;
-  font-size: 11rem;
+  font-size: 13rem;
   font-weight: 100;
   margin: 50px 0;
 }
 
 .header2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #F9F9F9;
   text-shadow: 1px 1px black;
   font-size: 2rem;
   font-weight: 500;
-  margin: 25px 0;
-}
-
-.header3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #F9F9F9;
-  text-shadow: 1px 1px black;
-  font-size: 1.3rem;
-  font-weight: 500;
   margin: 0;
+  width: 75%
 }
 
 /* Blurb and nav section */
 
 #opening-paragraph {
   text-align: center;
-  margin: 0;
-  padding: 100px 150px 50px;
+  padding: 4rem 0 2rem;
+  margin: auto;
+  width: 75%;
   background-color: white;
-  font-family:  Tahoma, Verdana, Geneva, sans-serif;
-  letter-spacing: 0.5px;
   font-size: 1.25rem;
 }
 
 #down-arrow {
   max-width: 15%;
   display: block;
-  margin: 0 auto 2em;
+  padding: 2rem 0;
+  margin: auto;
 }
 
 #nav-list {
@@ -61,19 +55,29 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   justify-content: space-around;
   background-color: white;
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
   font-size: 1.25rem;
-  letter-spacing: 0.5px;
-  padding: 0;
-  margin-bottom: 2em;
+  padding: 2rem;
+}
+
+.nav-cards {
+  align-items: center;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+
 }
 
 a:link {
   color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 a:visited {
@@ -86,17 +90,15 @@ a:visited {
 }
 
 .main-content{
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
-  letter-spacing: 0.5px;
   margin: 3em;
   padding-bottom: 2em;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  font-size: 1.25rem;
 }
 
 .province-title {
   text-align: center;
-  font-size: 2em;
   font-weight: 500;
 }
 
@@ -112,14 +114,11 @@ a:visited {
 
 .national-park-names {
   font-weight: 500;
-  font-size: 1em;
   text-decoration: underline;
 }
 
 #footer {
   margin: 3em;
-  font-family: Tahoma, Verdana, Geneva, sans-serif;
-  letter-spacing: 0.5px;
   text-align: center;
 }
 
@@ -133,36 +132,36 @@ a:visited {
   }
 
   .header1 {
-    font-size: 5em;
+    font-size: 5rem;
   }
 
   .header2 {
-    font-size: 1.5em;
-    margin: 0 1em 1em;
+    font-size: 1.5rem;
+    margin: 0 1rem 1rem;
   }
 
   .header3 {
-    font-size: 1em;
-    margin: 0 1em;
+    font-size: 1rem;
+    margin: 0 1rem;
   }
 
   #opening-paragraph{
     padding: 0;
-    margin: 3em 1em;
+    margin: 3rem 1rem;
   }
 
   .main-content {
     text-align: center;
-    margin: 2em;
+    margin: 2rem;
   }
 
   .province-image {
     height: 100%;
-  width: 100%;
+    width: 100%;
   }
 
   .national-park-names {
-    margin-top: 3em;
+    margin-top: 3rem;
     display: block;
   }
 }
