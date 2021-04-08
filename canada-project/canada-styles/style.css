@@ -3,6 +3,7 @@
 }
 
 /* Header/banner section */
+
 .header {
   background: url("../canada-images/header-photo.jpg");
   background-size: cover;
@@ -32,7 +33,7 @@
   width: 75%
 }
 
-/* Blurb and nav section */
+/* Blurb section */
 
 #opening-paragraph {
   text-align: center;
@@ -50,6 +51,8 @@
   margin: auto;
 }
 
+/* navigation section */
+
 #nav-list {
   height: 100vh;
   list-style-type: none;
@@ -63,16 +66,16 @@
   padding: 2rem;
 }
 
-.nav-cards {
-  align-items: center;
-  /* width: 80%; */
-  /* margin: 0 auto; */
+.card-img-top {
+  height: 25vh;
+}
 
+.nav-cards {
+margin: 0;
 }
 
 a:link {
   color: black;
-  text-decoration: none;
 }
 
 a:hover {
@@ -120,6 +123,7 @@ a:visited {
 #footer {
   margin: 3em;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 /* media queries */
